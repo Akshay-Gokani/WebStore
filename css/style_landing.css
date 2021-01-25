@@ -1,0 +1,288 @@
+* {
+    color: white;
+    font-family: 'Comfortaa';
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("/img/background_star.png");
+    margin: auto;
+    max-width: 1920px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* Top Header */
+
+div.TopBanner {
+    display: block;
+    background-position: center;
+    height: 15vw;
+    background-size: 120vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/banner1.jpg");
+}
+
+div.BannerText {
+    text-shadow: 1px 1px 1px black, 0 0 25px #afe9f8, 0 0 5px rgb(179, 173, 173);
+    color: black;
+    padding-top: 1vw;
+    text-align: center;
+    font-size: min(2vw, 40px);
+}
+
+
+/* Sticky Navigation */
+
+nav {
+    display: flex;
+    flex: 100px;
+    flex-direction: row;
+    background-color: #294568;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    line-height: 0;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+}
+
+nav div.right {
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 150px;
+    align-self: flex-start;
+}
+
+.item {
+    width: 80px;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.logo,
+.item {
+    background-color: #028090;
+    margin: 10px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.coolbuttons {
+    background-color: #85798C;
+}
+
+.product-search {
+    flex-shrink: 0;
+    display: inline-block;
+    margin: auto;
+}
+
+#filter,
+#sort {
+    color: black;
+}
+
+.product-search input[type=text],
+.product-search button {
+    padding: 10px;
+    border: none;
+}
+
+.product-search input[type=text] {
+    width: 10rem;
+    color: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.product-search button {
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    background-color: grey;
+}
+
+div.text {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1px;
+}
+
+.text p {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    margin: 100px 50px;
+}
+
+
+/************ Main Landing page *************/
+
+
+/* flex card */
+
+.flex-card {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: 5px, black;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 15px 0;
+}
+
+.flextext {
+    padding-top: 5vw;
+    color: rgb(240, 241, 245);
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    font-size: max(2vw, 12px);
+}
+
+.fleximg {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.flex-card div {
+    margin: 1rem;
+}
+
+.flex-card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.flex-card a {
+    text-decoration: none;
+}
+
+.desc {
+    text-align: center
+}
+
+
+/* gallery - flexcard element to display items */
+
+.gallery img {
+    border: 1.2px solid whitesmoke;
+}
+
+.gallery img:hover {
+    box-shadow: 0 0 25px rgba(208, 109, 255, 0.7);
+}
+
+.flex-card .flex-gallery {
+    margin: 1rem auto;
+}
+
+.gallery {
+    padding: 5px;
+}
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 3px solid rgba(0, 136, 169, 0.8);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* text-shadow: 1px 1px 2px black, 0 0 25px #afe9f8, 0 0 5px rgb(179, 173, 173); */
+}
+
+.footer div {
+    display: block;
+    text-align: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    background-color: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer_left {
+    margin: 10px;
+    color: white;
+    max-width: 200px;
+}
+
+.footer_center {
+    margin: 10px;
+    max-width: 200px;
+}
+
+.footer_right {
+    margin: 10px 10px;
+    color: white;
+    max-width: 200px;
+}
+
+
+/* CSS to make social links appear in respective colours*/
+
+.support a {
+    color: #0088a9;
+}
+
+.support a:hover {
+    color: rgb(38, 193, 231);
+}
+
+.footer_links a {
+    color: #0088a9;
+}
+
+.footer_links a:hover {
+    color: rgb(38, 193, 231);
+}
+
+h3 {
+    color: rgba(0, 136, 169, 0.8);
+}
+
+.footersocial {
+    padding-right: 20px;
+}
+
+.Youtube {
+    color: red;
+}
+
+.facebook {
+    color: navy;
+}
+
+.twitter {
+    color: lightblue;
+}
+
+.instagram {
+    color: purple;
+}
+
+.footer a:hover {
+    color: azure;
+}

@@ -1,0 +1,417 @@
+* {
+    color: white;
+    font-family: 'Comfortaa';
+}
+
+body {
+    display: block;
+    align-items: baseline;
+    height: 100px;
+    text-align: justify;
+    background-image: url("/img/background_star.png");
+    margin: auto;
+    max-width: 1920px;
+}
+
+
+/* Top Header */
+
+div.TopBanner {
+    display: block;
+    height: 15vw;
+    background-position: center;
+    background-size: 120vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/banner1.jpg");
+}
+
+div.BannerText {
+    text-shadow: 1px 1px 1px black, 0 0 25px #afe9f8, 0 0 5px rgb(179, 173, 173);
+    color: black;
+    padding-top: 1vw;
+    text-align: center;
+    font-size: min(2vw, 40px);
+}
+
+
+/* Sticky Navigation */
+
+nav {
+    display: flex;
+    flex: 100px;
+    flex-direction: row;
+    background-color: #294568;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    line-height: 0;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+}
+
+nav div.right {
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 150px;
+    align-self: flex-start;
+}
+
+.item {
+    width: 80px;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.logo,
+.item {
+    background-color: #028090;
+    margin: 10px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.coolbuttons {
+    background-color: #85798C;
+}
+
+.product-search {
+    flex-shrink: 0;
+    display: inline-block;
+    margin: auto;
+}
+
+#filter,
+#sort {
+    color: black;
+}
+
+.product-search input[type=text],
+.product-search button {
+    padding: 10px;
+    border: none;
+}
+
+.product-search input[type=text] {
+    width: 10rem;
+    color: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.product-search button {
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    background-color: grey;
+}
+
+
+/*** main css (product) ***/
+
+.product-placement {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+}
+
+.product-image-container {
+  margin-top: 25px;
+  width: 75%;
+  border: 5px, black;
+  background-color: #0824499c;
+  height: 90%;
+}
+
+.side-flex {
+    display: flex;
+    height: 90%;
+}
+
+.product-image {
+    display: flex;
+    border: 4mm ridge #3c5676;
+    border-radius: 25px;
+    height: 85%;
+}
+
+.imgcont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.titleflex {
+    text-align: center;
+    color: #B0C4DE;
+    font-family: 'Bitter', fantasy;
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: 5px 5px 10px #6D91C2;
+}
+
+.desc-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+}
+
+.descborder {
+    display: flex;
+    padding: 20px;
+    background-color: rgba(57, 131, 192, 0.2);
+    border: 4mm ridge #3c5676;
+    border-radius: 50px;
+}
+
+.product-description {
+    margin: none;
+}
+
+.iteminfo {
+    margin-top: 50px;
+    float: right;
+    width: 25%;
+    border: 5px, black;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #104e9e00;
+}
+
+.priceinfo {
+    height: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.quanityselector {
+    font-size: 20px;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quaninput {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    max-width: 100px;
+}
+
+.add-to-cart {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-to-cart button {
+    height: 30px;
+    width: 125px;
+    border-radius: 50px;
+    background-color: #2e96a3ff;
+}
+
+.add-to-cart button:hover {
+    background-color: rgb(48, 180, 197);
+    border-color: black;
+    border-width: 5px;
+}
+
+
+/* CSS code to create a visually adapting star rating in pure HTML and CSS. Modified and adapted from: https://github.com/mukulkant/Star-rating-using-pure-css-->*/
+.starrating {
+margin: 0px;
+padding: 0;
+padding-left: 10px;
+}
+.rating {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+
+/* flex card */
+
+.flex-card {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.flextext {
+    padding-top: 5vw;
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    font-size: max(2vw, 12px);
+    border: 5px, black;
+    border-radius: 25px;
+}
+
+.fleximg {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+img.fleximg {
+    border: 5px, black;
+    border-radius: 20px;
+}
+
+.fleximg img {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.flex-card div {
+    margin: 1rem;
+}
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 3px solid rgba(0, 136, 169, 0.95);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* text-shadow: 1px 1px 2px black, 0 0 25px #afe9f8, 0 0 5px rgb(179, 173, 173); */
+}
+
+.footer div {
+    display: block;
+    text-align: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    background-color: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer_left {
+    margin: 10px;
+    color: white;
+    max-width: 200px;
+}
+
+.footer_center {
+    margin: 10px;
+    max-width: 200px;
+}
+
+.footer_right {
+    margin: 10px 10px;
+    color: white;
+    max-width: 200px;
+}
+
+
+/* CSS to make social links appear in respective colours*/
+
+.support a {
+    color: #0088a9;
+}
+
+.support a:hover {
+    color: rgb(38, 193, 231);
+}
+
+.footer_links a {
+    color: #0088a9;
+}
+
+.footer_links a:hover {
+    color: rgb(38, 193, 231);
+}
+
+h3 {
+    color: rgba(0, 136, 169, 0.8);
+}
+
+.footersocial {
+    padding-right: 20px;
+}
+
+.Youtube {
+    color: red;
+}
+
+.facebook {
+    color: navy;
+}
+
+.twitter {
+    color: lightblue;
+}
+
+.instagram {
+    color: purple;
+}
+
+.footer a:hover {
+    color: azure;
+}
